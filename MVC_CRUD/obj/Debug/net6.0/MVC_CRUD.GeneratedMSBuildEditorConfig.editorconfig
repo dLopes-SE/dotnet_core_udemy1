@@ -11,9 +11,13 @@ build_property.RootNamespace = MVC_CRUD
 build_property.ProjectDir = C:\Users\dlopes\Desktop\Projects\dotnet_core_udemy1\MVC_CRUD\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
-build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = C:\Users\dlopes\Desktop\Projects\dotnet_core_udemy1\MVC_CRUD
 build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/dlopes/Desktop/Projects/dotnet_core_udemy1/MVC_CRUD/Views/Category/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/dlopes/Desktop/Projects/dotnet_core_udemy1/MVC_CRUD/Views/Category/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s

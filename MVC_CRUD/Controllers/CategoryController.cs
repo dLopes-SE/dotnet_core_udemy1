@@ -14,8 +14,26 @@ namespace MVC_CRUD.Controllers
         }
         public IActionResult Index()
         {
-            IEnumerable<Category> categories = _db.Categories;
+            List<Category> categories = _db.Categories.ToList();
             return View(categories);
+        }
+
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Create(Category obj)
+        {
+            if (ModelState.IsValid)
+            {
+                _db.Categories.Add(obj);
+                _db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View(obj);
         }
     }
 }
