@@ -14,7 +14,10 @@ namespace MVC_CRUD.Controllers
         }
         public IActionResult Index()
         {
-            List<Category> categories = _db.Categories.ToList();
+            List<Category> categories = _db.Categories
+                                        .ToList()
+                                        .OrderBy(c => c.DisplayOrder)
+                                        .ToList();
             return View(categories);
         }
 
@@ -27,6 +30,14 @@ namespace MVC_CRUD.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Create(Category obj)
         {
+            if (_db.Categories.ToList().
+                Select(c => c.DisplayOrder).
+                Contains(obj.DisplayOrder))
+            {
+                ModelState.AddModelError("CustomError", "Cannot have same display order");
+            }
+
+
             if (ModelState.IsValid)
             {
                 _db.Categories.Add(obj);
@@ -34,6 +45,58 @@ namespace MVC_CRUD.Controllers
                 return RedirectToAction("Index");
             }
             return View(obj);
+        }
+
+        //GET
+        public IActionResult Edit(int? id)
+        {
+            if (id == null || id == 0)
+                return NotFound();
+
+            var category = _db.Categories.FirstOrDefault(c => c.Id == id);
+            if (category == null)
+                return NotFound();  
+
+            return View(category);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Edit(Category obj)
+        {
+            if (ModelState.IsValid)
+            {
+                _db.Categories.Update(obj);
+                _db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View(obj);
+        }
+
+        //GET
+        public IActionResult Delete(int? id)
+        {
+            if (id == null || id == 0)
+                return NotFound();
+
+            var category = _db.Categories.FirstOrDefault(c => c.Id == id);
+            if (category == null)
+                return NotFound();
+
+            return View(category);
+        }
+
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public IActionResult DeletePost(int? id)
+        {
+            var obj = _db.Categories.FirstOrDefault(c => c.Id == id);
+            if (obj == null)
+                return NotFound();
+
+            _db.Categories.Remove(obj);
+            _db.SaveChanges();
+            return RedirectToAction("Index");
         }
     }
 }
