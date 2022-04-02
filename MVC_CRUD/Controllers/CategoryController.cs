@@ -34,7 +34,9 @@ namespace MVC_CRUD.Controllers
                 Select(c => c.DisplayOrder).
                 Contains(obj.DisplayOrder))
             {
-                ModelState.AddModelError("CustomError", "Cannot have same display order");
+                string error = "Cannot have same display order";
+                ModelState.AddModelError("CustomError", error);
+                TempData["error"] = error;
             }
 
 
@@ -42,6 +44,7 @@ namespace MVC_CRUD.Controllers
             {
                 _db.Categories.Add(obj);
                 _db.SaveChanges();
+                TempData["success"] = "Created object with success!";
                 return RedirectToAction("Index");
             }
             return View(obj);
@@ -96,6 +99,7 @@ namespace MVC_CRUD.Controllers
 
             _db.Categories.Remove(obj);
             _db.SaveChanges();
+            TempData["success"] = "Deleted object with success!";
             return RedirectToAction("Index");
         }
     }
