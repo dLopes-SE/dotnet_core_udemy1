@@ -1,0 +1,5 @@
+C:\Users\dlopes\Desktop\Projects\dotnet_core_udemy1\DataAccess\obj\Debug\net6.0\DataAccess.csproj.AssemblyReference.cache
+C:\Users\dlopes\Desktop\Projects\dotnet_core_udemy1\DataAccess\obj\Debug\net6.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dlopes\Desktop\Projects\dotnet_core_udemy1\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\dlopes\Desktop\Projects\dotnet_core_udemy1\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfo.cs
+C:\Users\dlopes\Desktop\Projects\dotnet_core_udemy1\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CoreCompileInputs.cache
