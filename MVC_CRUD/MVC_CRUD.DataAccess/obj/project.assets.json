@@ -1771,8 +1771,8 @@
     },
     "MVC_CRUD.Models/1.0.0": {
       "type": "project",
-      "path": "../ClassLibrary1/MVC_CRUD.Models.csproj",
-      "msbuildProject": "../ClassLibrary1/MVC_CRUD.Models.csproj"
+      "path": "../MVC_CRUD.Models/MVC_CRUD.Models.csproj",
+      "msbuildProject": "../MVC_CRUD.Models/MVC_CRUD.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1790,11 +1790,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dlopes\\Desktop\\Projects\\dotnet_core_udemy1\\DataAccess\\MVC_CRUD.DataAccess.csproj",
+      "projectUniqueName": "C:\\Users\\dlopes\\Desktop\\Projects\\dotnet_core_udemy1\\MVC_CRUD\\MVC_CRUD.DataAccess\\MVC_CRUD.DataAccess.csproj",
       "projectName": "MVC_CRUD.DataAccess",
-      "projectPath": "C:\\Users\\dlopes\\Desktop\\Projects\\dotnet_core_udemy1\\DataAccess\\MVC_CRUD.DataAccess.csproj",
+      "projectPath": "C:\\Users\\dlopes\\Desktop\\Projects\\dotnet_core_udemy1\\MVC_CRUD\\MVC_CRUD.DataAccess\\MVC_CRUD.DataAccess.csproj",
       "packagesPath": "C:\\Users\\dlopes\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dlopes\\Desktop\\Projects\\dotnet_core_udemy1\\DataAccess\\obj\\",
+      "outputPath": "C:\\Users\\dlopes\\Desktop\\Projects\\dotnet_core_udemy1\\MVC_CRUD\\MVC_CRUD.DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1815,8 +1815,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\dlopes\\Desktop\\Projects\\dotnet_core_udemy1\\ClassLibrary1\\MVC_CRUD.Models.csproj": {
-              "projectPath": "C:\\Users\\dlopes\\Desktop\\Projects\\dotnet_core_udemy1\\ClassLibrary1\\MVC_CRUD.Models.csproj"
+            "C:\\Users\\dlopes\\Desktop\\Projects\\dotnet_core_udemy1\\MVC_CRUD\\MVC_CRUD.Models\\MVC_CRUD.Models.csproj": {
+              "projectPath": "C:\\Users\\dlopes\\Desktop\\Projects\\dotnet_core_udemy1\\MVC_CRUD\\MVC_CRUD.Models\\MVC_CRUD.Models.csproj"
             }
           }
         }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dlopes\\Desktop\\Projects\\dotnet_core_udemy1\\Utility\\Utility.csproj": {}
+    "C:\\Users\\dlopes\\Desktop\\Projects\\dotnet_core_udemy1\\MVC_CRUD\\MVC_CRUD_Utility\\Utility.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dlopes\\Desktop\\Projects\\dotnet_core_udemy1\\Utility\\Utility.csproj": {
+    "C:\\Users\\dlopes\\Desktop\\Projects\\dotnet_core_udemy1\\MVC_CRUD\\MVC_CRUD_Utility\\Utility.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dlopes\\Desktop\\Projects\\dotnet_core_udemy1\\Utility\\Utility.csproj",
+        "projectUniqueName": "C:\\Users\\dlopes\\Desktop\\Projects\\dotnet_core_udemy1\\MVC_CRUD\\MVC_CRUD_Utility\\Utility.csproj",
         "projectName": "Utility",
-        "projectPath": "C:\\Users\\dlopes\\Desktop\\Projects\\dotnet_core_udemy1\\Utility\\Utility.csproj",
+        "projectPath": "C:\\Users\\dlopes\\Desktop\\Projects\\dotnet_core_udemy1\\MVC_CRUD\\MVC_CRUD_Utility\\Utility.csproj",
         "packagesPath": "C:\\Users\\dlopes\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dlopes\\Desktop\\Projects\\dotnet_core_udemy1\\Utility\\obj\\",
+        "outputPath": "C:\\Users\\dlopes\\Desktop\\Projects\\dotnet_core_udemy1\\MVC_CRUD\\MVC_CRUD_Utility\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

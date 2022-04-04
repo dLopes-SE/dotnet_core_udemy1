@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TuXV32jKnxvJgtfvgaQb6Ze0CBu+pmUVcgnxComuklhzz5Qd+s3iXXF06hSG8ro9oKJcCrfcnnz2xZB1jKNXaQ==",
+  "dgSpecHash": "aYW/6tiAc0d8Jt1aNUCab3HPz8w7tKN9pYy0LlgW86W3wf2hG0adw3otyZ6Es103vWytL99LyUG6/ixGkYR2cQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\dlopes\\Desktop\\Projects\\dotnet_core_udemy1\\DataAccess\\MVC_CRUD.DataAccess.csproj",
+  "projectFilePath": "C:\\Users\\dlopes\\Desktop\\Projects\\dotnet_core_udemy1\\MVC_CRUD\\MVC_CRUD.DataAccess\\MVC_CRUD.DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dlopes\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\dlopes\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",

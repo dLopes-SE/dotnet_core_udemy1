@@ -9667,18 +9667,19 @@
     },
     "MVC_CRUD.DataAccess/1.0.0": {
       "type": "project",
-      "path": "../DataAccess/MVC_CRUD.DataAccess.csproj",
-      "msbuildProject": "../DataAccess/MVC_CRUD.DataAccess.csproj"
+      "path": "../MVC_CRUD.DataAccess/MVC_CRUD.DataAccess.csproj",
+      "msbuildProject": "../MVC_CRUD.DataAccess/MVC_CRUD.DataAccess.csproj"
     },
     "MVC_CRUD.Models/1.0.0": {
       "type": "project",
-      "path": "../ClassLibrary1/MVC_CRUD.Models.csproj",
-      "msbuildProject": "../ClassLibrary1/MVC_CRUD.Models.csproj"
+      "path": "../MVC_CRUD.Models/MVC_CRUD.Models.csproj",
+      "msbuildProject": "../MVC_CRUD.Models/MVC_CRUD.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "MVC_CRUD.DataAccess >= 1.0.0",
+      "MVC_CRUD.Models >= 1.0.0",
       "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation >= 6.0.3",
       "Microsoft.EntityFrameworkCore >= 6.0.3",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.3",
@@ -9693,11 +9694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dlopes\\Desktop\\Projects\\dotnet_core_udemy1\\MVC_CRUD\\MVC_CRUD.csproj",
+      "projectUniqueName": "C:\\Users\\dlopes\\Desktop\\Projects\\dotnet_core_udemy1\\MVC_CRUD\\MVC_CRUD\\MVC_CRUD.csproj",
       "projectName": "MVC_CRUD",
-      "projectPath": "C:\\Users\\dlopes\\Desktop\\Projects\\dotnet_core_udemy1\\MVC_CRUD\\MVC_CRUD.csproj",
+      "projectPath": "C:\\Users\\dlopes\\Desktop\\Projects\\dotnet_core_udemy1\\MVC_CRUD\\MVC_CRUD\\MVC_CRUD.csproj",
       "packagesPath": "C:\\Users\\dlopes\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dlopes\\Desktop\\Projects\\dotnet_core_udemy1\\MVC_CRUD\\obj\\",
+      "outputPath": "C:\\Users\\dlopes\\Desktop\\Projects\\dotnet_core_udemy1\\MVC_CRUD\\MVC_CRUD\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -9718,8 +9719,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\dlopes\\Desktop\\Projects\\dotnet_core_udemy1\\DataAccess\\MVC_CRUD.DataAccess.csproj": {
-              "projectPath": "C:\\Users\\dlopes\\Desktop\\Projects\\dotnet_core_udemy1\\DataAccess\\MVC_CRUD.DataAccess.csproj"
+            "C:\\Users\\dlopes\\Desktop\\Projects\\dotnet_core_udemy1\\MVC_CRUD\\MVC_CRUD.DataAccess\\MVC_CRUD.DataAccess.csproj": {
+              "projectPath": "C:\\Users\\dlopes\\Desktop\\Projects\\dotnet_core_udemy1\\MVC_CRUD\\MVC_CRUD.DataAccess\\MVC_CRUD.DataAccess.csproj"
+            },
+            "C:\\Users\\dlopes\\Desktop\\Projects\\dotnet_core_udemy1\\MVC_CRUD\\MVC_CRUD.Models\\MVC_CRUD.Models.csproj": {
+              "projectPath": "C:\\Users\\dlopes\\Desktop\\Projects\\dotnet_core_udemy1\\MVC_CRUD\\MVC_CRUD.Models\\MVC_CRUD.Models.csproj"
             }
           }
         }

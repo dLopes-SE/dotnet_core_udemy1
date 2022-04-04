@@ -7,4 +7,4 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Utility
-build_property.ProjectDir = C:\Users\dlopes\Desktop\Projects\dotnet_core_udemy1\Utility\
+build_property.ProjectDir = C:\Users\dlopes\Desktop\Projects\dotnet_core_udemy1\MVC_CRUD\MVC_CRUD_Utility\

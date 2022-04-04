@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WoGZGzqYdqBgOwLU8yVirEeleuguO2MVt0kBhy5KFEksYIP1pXPX0kz+HkYKlIj9lzXHpbF8y/HAO7xRV3MLhg==",
+  "dgSpecHash": "TCdfx3ZH57qHXUQlQB2FGhjM8MVDoyl4fc4wkNEmHn5mfmdwKQuGV4qA6yJ2bzodk4XT1XY3j9AfhsDfkalAlA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\dlopes\\Desktop\\Projects\\dotnet_core_udemy1\\Utility\\Utility.csproj",
+  "projectFilePath": "C:\\Users\\dlopes\\Desktop\\Projects\\dotnet_core_udemy1\\MVC_CRUD\\MVC_CRUD_Utility\\Utility.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

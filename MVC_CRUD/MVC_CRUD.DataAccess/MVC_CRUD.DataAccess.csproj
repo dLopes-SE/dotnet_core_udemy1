@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ClassLibrary1\MVC_CRUD.Models.csproj" />
+    <ProjectReference Include="..\MVC_CRUD.Models\MVC_CRUD.Models.csproj" />
   </ItemGroup>
 
 </Project>

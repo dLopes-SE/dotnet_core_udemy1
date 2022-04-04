@@ -10,3 +10,15 @@ C:\Users\dlopes\Desktop\Projects\dotnet_core_udemy1\ClassLibrary1\obj\Debug\net6
 C:\Users\dlopes\Desktop\Projects\dotnet_core_udemy1\ClassLibrary1\obj\Debug\net6.0\refint\MVC_CRUD.Models.dll
 C:\Users\dlopes\Desktop\Projects\dotnet_core_udemy1\ClassLibrary1\obj\Debug\net6.0\MVC_CRUD.Models.pdb
 C:\Users\dlopes\Desktop\Projects\dotnet_core_udemy1\ClassLibrary1\obj\Debug\net6.0\ref\MVC_CRUD.Models.dll
+C:\Users\dlopes\Desktop\Projects\dotnet_core_udemy1\MVC_CRUD\MVC_CRUD.Models\bin\Debug\net6.0\MVC_CRUD.Models.deps.json
+C:\Users\dlopes\Desktop\Projects\dotnet_core_udemy1\MVC_CRUD\MVC_CRUD.Models\bin\Debug\net6.0\MVC_CRUD.Models.dll
+C:\Users\dlopes\Desktop\Projects\dotnet_core_udemy1\MVC_CRUD\MVC_CRUD.Models\bin\Debug\net6.0\MVC_CRUD.Models.pdb
+C:\Users\dlopes\Desktop\Projects\dotnet_core_udemy1\MVC_CRUD\MVC_CRUD.Models\obj\Debug\net6.0\MVC_CRUD.Models.csproj.AssemblyReference.cache
+C:\Users\dlopes\Desktop\Projects\dotnet_core_udemy1\MVC_CRUD\MVC_CRUD.Models\obj\Debug\net6.0\MVC_CRUD.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dlopes\Desktop\Projects\dotnet_core_udemy1\MVC_CRUD\MVC_CRUD.Models\obj\Debug\net6.0\MVC_CRUD.Models.AssemblyInfoInputs.cache
+C:\Users\dlopes\Desktop\Projects\dotnet_core_udemy1\MVC_CRUD\MVC_CRUD.Models\obj\Debug\net6.0\MVC_CRUD.Models.AssemblyInfo.cs
+C:\Users\dlopes\Desktop\Projects\dotnet_core_udemy1\MVC_CRUD\MVC_CRUD.Models\obj\Debug\net6.0\MVC_CRUD.Models.csproj.CoreCompileInputs.cache
+C:\Users\dlopes\Desktop\Projects\dotnet_core_udemy1\MVC_CRUD\MVC_CRUD.Models\obj\Debug\net6.0\MVC_CRUD.Models.dll
+C:\Users\dlopes\Desktop\Projects\dotnet_core_udemy1\MVC_CRUD\MVC_CRUD.Models\obj\Debug\net6.0\refint\MVC_CRUD.Models.dll
+C:\Users\dlopes\Desktop\Projects\dotnet_core_udemy1\MVC_CRUD\MVC_CRUD.Models\obj\Debug\net6.0\MVC_CRUD.Models.pdb
+C:\Users\dlopes\Desktop\Projects\dotnet_core_udemy1\MVC_CRUD\MVC_CRUD.Models\obj\Debug\net6.0\ref\MVC_CRUD.Models.dll
