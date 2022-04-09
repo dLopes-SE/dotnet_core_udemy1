@@ -4,7 +4,7 @@ using MVC_CRUD.Models;
 
 namespace MVC_CRUD.DataAccess.Repositoy
 {
-    internal class CategoryRepository : Repository<Category>, ICategoryRepository
+    public class CategoryRepository : Repository<Category>, ICategoryRepository
     {
         private ApplicationDbContext _db;
         public CategoryRepository(ApplicationDbContext db) : base(db)

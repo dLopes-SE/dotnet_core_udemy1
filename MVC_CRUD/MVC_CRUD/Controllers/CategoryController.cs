@@ -1,23 +1,20 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using MVC_CRUD.Data;
+using MVC_CRUD.DataAccess.Interfaces;
 using MVC_CRUD.Models;
 
 namespace MVC_CRUD.Controllers
 {
     public class CategoryController : Controller
     {
-        private readonly ApplicationDbContext _db;
+        private readonly ICategoryRepository _db;
 
-        public CategoryController(ApplicationDbContext db)
+        public CategoryController(ICategoryRepository db)
         {
             _db = db;
         }
         public IActionResult Index()
         {
-            List<Category> categories = _db.Categories
-                                        .ToList()
-                                        .OrderBy(c => c.DisplayOrder)
-                                        .ToList();
+            IEnumerable<Category> categories = _db.GetAll();
             return View(categories);
         }
 
@@ -30,9 +27,10 @@ namespace MVC_CRUD.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Create(Category obj)
         {
-            if (_db.Categories.ToList().
-                Select(c => c.DisplayOrder).
-                Contains(obj.DisplayOrder))
+            if (_db.GetAll()
+                   .Select(c => c.DisplayOrder)
+                   .Contains(obj.DisplayOrder))
+
             {
                 string error = "Cannot have same display order";
                 ModelState.AddModelError("CustomError", error);
@@ -42,8 +40,8 @@ namespace MVC_CRUD.Controllers
 
             if (ModelState.IsValid)
             {
-                _db.Categories.Add(obj);
-                _db.SaveChanges();
+                _db.Add(obj);
+                _db.Save();
                 TempData["success"] = "Created object with success!";
                 return RedirectToAction("Index");
             }
@@ -56,7 +54,7 @@ namespace MVC_CRUD.Controllers
             if (id == null || id == 0)
                 return NotFound();
 
-            var category = _db.Categories.FirstOrDefault(c => c.Id == id);
+            var category = _db.GetFirstOrDefault(c => c.Id == id);
             if (category == null)
                 return NotFound();  
 
@@ -67,13 +65,13 @@ namespace MVC_CRUD.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Edit(Category obj)
         {
-            var category = _db.Categories.ToList();
+            var category = _db.GetAll();
             if (ModelState.IsValid)
             {
                 if (!category.Select(c => c.DisplayOrder).Contains(obj.DisplayOrder))
                 {
-                    _db.Categories.Update(obj);
-                    _db.SaveChanges();
+                    _db.Update(obj);
+                    _db.Save();
                     TempData["success"] = "Object updated with success!";
                     return RedirectToAction("Index");
                 }
@@ -90,7 +88,7 @@ namespace MVC_CRUD.Controllers
             if (id == null || id == 0)
                 return NotFound();
 
-            var category = _db.Categories.FirstOrDefault(c => c.Id == id);
+            var category = _db.GetFirstOrDefault(c => c.Id == id);
             if (category == null)
                 return NotFound();
 
@@ -101,12 +99,12 @@ namespace MVC_CRUD.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult DeletePost(int? id)
         {
-            var obj = _db.Categories.FirstOrDefault(c => c.Id == id);
+            var obj = _db.GetFirstOrDefault(c => c.Id == id);
             if (obj == null)
                 return NotFound();
 
-            _db.Categories.Remove(obj);
-            _db.SaveChanges();
+            _db.Remove(obj);
+            _db.Save();
             TempData["success"] = "Deleted object with success!";
             return RedirectToAction("Index");
         }
